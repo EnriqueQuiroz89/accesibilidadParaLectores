@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accesibilidad</title>
+    <style>
+        .sr-only {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            top: auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Tienda</li>
+                <li>Nuestros atletas</li>
+            </ul>
+        </nav>
+
+        <h1>Team RedBull</h1>
+
+        <section>
+            <figure>
+                <img src="redbull.jpg" alt="Logo de Bedida energetica Redd bull">
+                <figcaption>Es una imagen de redbull</figcaption>
+            </figure>
+        </section>
+
+<img src="imagenVisibleDeSeparacion" alt="">
+
+        <section>
+            <fieldset>
+                <legend>Cuantos RedBull tomas a la semana?</legend>
+                <label for="poco">
+                    <input type="radio" id="poco" name="ingesta">
+                    De 1 a 3 latas
+                    </input>
+                    <label for="maso">
+                        <input type="radio" id="maso" name="ingesta">
+                        De 4 a 10 latas
+                        </input>
+                        <label for="mucho">
+                            <input type="radio" id="mucho" name="ingesta">
+                            De 4 a 10 latas
+                            </input>
+
+                        </label>
+            </fieldset>
+        </section>
+
+        <table class="sr-only">
+            <caption>Horas semanales de entrenamiento</caption>
+       <thead><tr>
+           <th></th>
+           <th scope="col">Agilidad</th>
+           <th scope="col">Combat</th>
+           <th scope="col">Armas</th>
+           <th></th>
+
+       </tr></thead>
+
+       <tbody>
+           <tr>
+               <th scope="row">Semana1</th>
+               <td>3</td>
+               <td>5</td>
+               <td>2</td>
+           </tr>
+       </tbody>
+       
+       
+        </table>
+
+
+    </header>
+</body>
+
+</html>
